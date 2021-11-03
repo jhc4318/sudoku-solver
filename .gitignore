@@ -1,0 +1,4 @@
+*.o
+.vscode
+sudoku
+easy-copy.dat

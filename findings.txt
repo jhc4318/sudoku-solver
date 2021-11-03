@@ -1,0 +1,23 @@
+Summarise your findings here (see specification).
+
+To determine the difficulty of the board, we can look at:
+    - the number of function calls,
+    - the maximum stack size achieved,
+    - and the elapsed time to solve the board.
+
+board name | no. function calls | max stack size | time elapsed (s)
+-----------+--------------------+----------------+-----------------
+mystery1   |       421546       |       58       |     0.137458
+mystery2*  |        11532       |       49       |     0.003763
+mystery3   |        14133       |       57       |     0.003655
+
+*mystery2 did not yield a solution, and so it is the unsolvable board.
+
+Comparing the maximum stack size yields little information on the difficulty of the board.
+It is highly dependent on whether the initial guesses are accurate as this would lead to the greatest stack size.
+
+Looking at the number of function calls gives us a much better idea of how difficult the board was.
+Mystery1 took 29.8x more function calls than mystery3 to solve the board, which is indicative of how many more guesses the solver required to converge to the right solution.
+This idea is reinforced when we look at the time elapsed, with mystery1 taking 37x longer to solve than mystery3.
+
+Mystery1 is the "extremely hard" board and mystery3 is the "hard" board.
